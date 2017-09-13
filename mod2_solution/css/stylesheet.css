@@ -1,0 +1,165 @@
+* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			font-family: cambria;
+
+		}
+
+		header {
+			text-align: center;
+			font-size: 30px;
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+
+		header#Categories {
+			visibility: hidden;
+		}
+
+		div {
+
+			float: left;
+			position: relative;
+			padding: 10px 10px 0px 10px;
+			overflow-y: scroll;
+			height: 200px;
+
+		}
+
+		div:hover{
+			cursor: row-resize;
+		}
+		
+		section {
+			background-color: gray;
+			border: 1px solid black;
+			color: black;
+			text-align: center;
+			padding: 10px;
+			margin: 5px;
+			padding-top: 30px;
+		}
+
+		p.chicken {
+			position: absolute;
+			background-color: pink;
+			right: 10px;
+			border: 1px solid black;
+			padding: 5px 30px 5px 30px;
+			margin: 5px;
+		}
+
+		p.beef {
+			position: absolute;
+			background-color: red;
+			right: 10px;
+			border: 1px solid black;
+			padding: 5px 30px 5px 30px;
+			margin: 5px;
+		}
+
+		p.sushi {
+			position: absolute;
+			background-color: yellow;
+			right: 10px;
+			border: 1px solid black;
+			padding: 5px 30px 5px 30px;
+			margin: 5px;
+		}
+
+		p.chicken_mobile{
+			position: absolute;
+			top: 10px;
+  			left: 10px;
+  			right: 10px;
+			background-color: pink;
+			border: 1px solid black;
+			padding: 5px 0px 5px 0px;
+			margin: 5px;
+			visibility: hidden;
+		}
+
+		p.beef_mobile{
+			position: absolute;
+			top: 10px;
+  			left: 10px;
+  			right: 10px;
+			background-color: red;
+			border: 1px solid black;
+			padding: 5px 0px 5px 0px;
+			margin: 5px;
+			visibility: hidden;
+		}
+
+		p.sushi_mobile{
+			position: absolute;
+			top: 10px;
+  			left: 10px;
+  			right: 10px;
+			background-color: yellow;
+			border: 1px solid black;
+			padding: 5px 0px 5px 0px;
+			margin: 5px;
+			visibility: hidden;
+		}
+
+		
+
+		@media (min-width: 992px){
+
+			div{
+				width: 33.3%;
+			}
+
+		}
+		@media (min-width: 768px) and (max-width: 991px){
+			div.chicken{
+				width: 50%;
+			}
+			div.beef{
+				width: 50%;
+			}
+			div.sushi{
+				width: 100%;
+			}
+		}
+		@media (max-width: 767px){
+			div.chicken{
+				width: 100%;
+			}
+			div.beef{
+				width: 100%;
+			}
+			div.sushi{
+				width: 100%;
+			}
+
+			p {
+				visibility: hidden;
+			}
+
+			p.chicken_mobile{
+				visibility: visible;
+			}
+
+			p.beef_mobile{
+				visibility: visible;
+			}
+
+			p.sushi_mobile{
+				visibility: visible;
+			}
+
+			header {
+				visibility: hidden;
+			}
+			header#Categories {
+				font-family: papyrus;
+				font-size: 20px;
+				visibility: visible;
+				text-align: left;
+				padding: 5px 0px 5px 0px;
+				margin: 15px;
+			}
+		}
