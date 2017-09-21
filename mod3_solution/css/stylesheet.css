@@ -1,0 +1,55 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: cambria;
+
+}
+
+header {
+	font-size: 30px;
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+
+#header-nav {
+	background-color: gray;
+	border-radius: 0;
+	border: 0;
+	border-bottom: 1;
+	border-color: black;
+	text-align: left;
+
+}
+
+#title {
+	float: left;
+	position: absolute;
+	padding: 10px 10px 0px 10px;
+	overflow-y: scroll;
+
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar { 
+	border: 1px solid black;
+}
+
+#nav-list a {
+	color: black;
+}
+
+section {
+	background-color: gray;
+	border: 1px solid black;
+	color: black;
+	text-align: center;
+	padding: 10px;
+	margin: 5px;
+	padding-top: 30px;
+}
+
+.protein-title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
