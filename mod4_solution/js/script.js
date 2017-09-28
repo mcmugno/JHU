@@ -80,28 +80,33 @@ WARNING!!! WARNING!!!
       console.log("Hello " + name);
     }
   }
-
+  console.log("\n")
   // 2b.
   var greetings = names.map(greet)
 
+  console.log("\n")
   //Bonus/optional
   initialValue = {hello: [], bye: []};
   var result = names.reduce(function(accumulator, initial, indexValue){
-    console.log("a " + accumulator);
-    console.log("i " + initial);
-    console.log("i " + indexValue);
-    console.log("n " + names);
+
     //define first letter
     var firstLetter = names[indexValue].charAt(0).toLowerCase();
 
     //Check if first letter is j, then print Hello/Good Bye to console
     if (firstLetter == "j") {
-      return initialValue.hello += "Good Bye " + names[indexValue];
+      return initialValue.bye.push("Good Bye " + names[indexValue]);
       
     } else {
-      return initialValue.hello += "Hello " + names[indexValue];
+      return initialValue.hello.push("Hello " + names[indexValue]);
     }
   });
-  console.log(initialValue.hello)
+
+  for(var name in initialValue.hello){
+    console.log(initialValue.hello[name]);
+  }
+  for(var name in initialValue.bye){
+    console.log(initialValue.bye[name]);
+  }
+  
 
 })();
